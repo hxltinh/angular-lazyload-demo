@@ -1,0 +1,6 @@
+<h2>Contact of {{userName}}</h2>
+<div *ngIf="msg" class="msg">{{msg}}</div>
+
+<form *ngIf="contacts" (ngSubmit)="onSubmit()" #contactForm="ngForm" >
+    <h3 highlight>{{contact.name}}</h3>
+</form>
