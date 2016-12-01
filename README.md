@@ -4,7 +4,6 @@
 ## introduction
 ```
 Front End: Angular 2, Webpack 2, Typescript
-Back End: Loopback, Postgresql
 ```
 
 ## environment
@@ -19,5 +18,10 @@ $ npm install
 $ typings install
 ```
 
+## Commands
+```
+$ Start development: npm start
+$ Build Application: npm run build
+```
 
 

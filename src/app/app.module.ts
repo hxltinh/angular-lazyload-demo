@@ -9,10 +9,9 @@ import UserService from "../services/user.service";
 import AppRoutingModule from "./app-routing.module";
 
 @NgModule({
-  imports: [BrowserModule, AppRoutingModule],
-  declarations: [AppComponent,
-    HightLightDirective],
-  providers: [UserService],
-  bootstrap: [AppComponent]
+  imports: [ BrowserModule, AppRoutingModule ],
+  declarations: [ AppComponent, HightLightDirective ],
+  providers: [ UserService ],
+  bootstrap: [ AppComponent ]
 })
 export class AppModule { };
