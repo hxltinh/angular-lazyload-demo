@@ -12,8 +12,7 @@ Front End: Angular 2, Webpack 2, Typescript
 
 ## Install
 ```
-$ npm install --global typings
-$ npm install --global typescript
+$ npm install --global fake-server typings typescript 
 $ npm install
 $ typings install
 ```
@@ -23,5 +22,3 @@ $ typings install
 $ Start development: npm start
 $ Build Application: npm run build
 ```
-
-

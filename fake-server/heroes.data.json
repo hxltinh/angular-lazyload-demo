@@ -11,6 +11,30 @@
         {
             "id": 3,
             "name": "spiderman"
+        },
+         {
+            "id": 4,
+            "name": "redhat"
+        },
+        {
+            "id": 5,
+            "name": "ironman"
+        },
+        {
+            "id": 6,
+            "name": "darknight"
+        },
+         {
+            "id": 7,
+            "name": "supergirl"
+        },
+        {
+            "id": 8,
+            "name": "cybord"
+        },
+        {
+            "id": 9,
+            "name": "doctor Strange"
         }
     ]
 }

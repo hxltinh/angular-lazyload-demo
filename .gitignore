@@ -18,3 +18,5 @@ coverage
 node_modules
 typings
 npm-debug.log
+
+dist/1.037ed2cc3c90ee405d4f.chunk.js
