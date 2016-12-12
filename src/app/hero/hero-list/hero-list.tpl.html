@@ -1,0 +1,11 @@
+<div id="search-component">
+  <h4>Hero List</h4>
+  <div>
+    <ul>
+      <li *ngFor="let hero of heroes | async" class="heroes-list">
+        {{hero.name}}
+      </li>
+    </ul>
+      
+  </div>
+</div>

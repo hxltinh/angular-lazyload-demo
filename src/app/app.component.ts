@@ -1,15 +1,64 @@
-import { Component } from "@angular/core";
+/*
+ * Angular 2 decorators and services
+ */
+import { Component, ViewEncapsulation } from '@angular/core';
 
+/*
+ * App Component
+ * Top Level Component
+ */
 @Component({
-  selector: "my-app",
-  template: `    
+  selector: 'app',
+  encapsulation: ViewEncapsulation.None,
+  styleUrls: [
+    './app.component.css'
+  ],
+  template: `
     <nav>
-      <a routerLink="contact" routerLinkActive="active">Contact (lazy load)</a> &&
-      <a routerLink="crisis"  routerLinkActive="active">Crisis Center (lazy load)</a>      
+      <span>
+        <a [routerLink]=" ['./'] ">
+          Index
+        </a>
+      </span>
+      |
+      <span>
+        <a [routerLink]=" ['./home'] ">
+          Home
+        </a>
+      </span>
+      |
+      <span>
+        <a [routerLink]=" ['./crisis'] ">
+          Crisis
+        </a>
+      </span>
+      |
+      <span>
+        <a [routerLink]=" ['./hero'] ">
+          Hero
+        </a>
+      </span>
+      |
+      <span>
+        <a [routerLink]=" ['./simple'] ">
+          Simple
+        </a>
+      </span>
     </nav>
-    <router-outlet></router-outlet>
+
+    <main>
+      <router-outlet></router-outlet>
+    </main>
   `
 })
-export default class AppComponent {
-  subtitle = "(Final)";
+export class AppComponent {
+
 }
+
+/*
+ * Please review the https://github.com/AngularClass/angular2-examples/ repo for
+ * more angular app examples that you may copy/paste
+ * (The examples may not be updated as quickly. Please open an issue on github for us to update it)
+ * For help or questions please contact us at @AngularClass on twitter
+ * or our chat on Slack at https://AngularClass.com/slack-join
+ */
