@@ -8,6 +8,9 @@ import { HeroModule } from '../hero.module';
 import { HeroListComponent }  from './hero-list.component';
 import { HEROES, FakeHeroService, HeroService } from '../hero.service.fake';
 
+import { newEvent, Router, RouterStub
+} from '../../testing';
+
 let comp: HeroListComponent;
 let fixture: ComponentFixture<HeroListComponent>;
 let page: Page;
@@ -19,7 +22,8 @@ describe('HeroListComponent', () => {
         TestBed.configureTestingModule({
             imports: [ HeroModule ],
         providers: [
-            { provide: HeroService, useClass: FakeHeroService }
+            { provide: HeroService, useClass: FakeHeroService },
+            { provide: Router,      useClass: RouterStub }
         ]
         })
         .compileComponents()

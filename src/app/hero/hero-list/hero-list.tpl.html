@@ -2,7 +2,7 @@
   <h4>Hero List</h4>
   <div>
     <ul>
-      <li *ngFor="let hero of heroes | async" class="heroes-list">
+      <li *ngFor="let hero of heroes | async" class="heroes-list" (click)="onSelect(hero)">
         {{ hero.name }}
         <!--<a [routerLink]="['/hero/item/', hero.id]" >{{ hero.name }}</a>-->
       </li>

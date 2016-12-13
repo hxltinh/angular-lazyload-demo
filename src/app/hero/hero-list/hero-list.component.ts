@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable }        from 'rxjs/Observable';
+import { Router }            from '@angular/router';
 import { Subject }           from 'rxjs/Subject';
 import 'rxjs/add/observable/of';
 
@@ -12,8 +13,9 @@ import { HeroService } from '../hero.service';
 })
 export class HeroListComponent {
     heroes: Observable<HeroInterface[]>;
+    selectedHero: HeroInterface;
 
-    constructor(private heroService: HeroService) { }
+    constructor(private heroService: HeroService, private router: Router) { }
 
     ngOnInit(): void {
         console.log(this.getList());
@@ -22,5 +24,10 @@ export class HeroListComponent {
 
     getList(): Observable<HeroInterface[]> {
         return this.heroService.getList();
+    }
+
+    onSelect(hero: HeroInterface) {
+        this.selectedHero = hero;
+        this.router.navigate(['../hero/item', this.selectedHero.id ]);
     }
 }
