@@ -12,7 +12,7 @@ let comp: HeroListComponent;
 let fixture: ComponentFixture<HeroListComponent>;
 let page: Page;
 
-fdescribe('HeroListComponent', () => {
+describe('HeroListComponent', () => {
 
     beforeEach( async(() => {
 

@@ -3,7 +3,8 @@
   <div>
     <ul>
       <li *ngFor="let hero of heroes | async" class="heroes-list">
-        {{hero.name}}
+        {{ hero.name }}
+        <!--<a [routerLink]="['/hero/item/', hero.id]" >{{ hero.name }}</a>-->
       </li>
     </ul>
       

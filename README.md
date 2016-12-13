@@ -12,7 +12,7 @@ Front End: Angular 2, Webpack, Typescript
 
 ## Install
 ```
-$ npm install -g webpack webpack-dev-server typings typescript json-server
+$ npm install -g webpack webpack-dev-server typescript json-server
 $ npm install
 $ typings install
 ```
@@ -21,3 +21,8 @@ $ typings install
 - $ npm run start:hmr: development mode
 - $ npm run watch:dev:hmr: testing mode
 - $ npm run build:prod: build front end at production mode
+
+##Note: 
+```
+Base on boilerblate of AngularClass: https://github.com/AngularClass/angular2-webpack-starter
+```

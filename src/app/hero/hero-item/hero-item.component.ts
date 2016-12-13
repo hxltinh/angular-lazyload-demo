@@ -16,7 +16,7 @@ export class HeroItemComponent {
 
     ngOnInit(): void {
         console.log('OnInit');
-        this.getHero().subscribe(res => console.debug('res:', res));
+        this.hero = this.getHero();
     }
 
     getHero(): Observable<HeroInterface> {
